@@ -1,0 +1,226 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  background-color: #fffacb;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+h1 {
+  font-family: "Coming Soon", cursive;
+  font-weight: 500;
+  font-style: bold;
+  padding: 30px;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  color: #39567c;
+  font-size: 70px;
+}
+
+h4 {
+  font-family: "Coming Soon", cursive;
+  font-style: bold;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  color: #39567c;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+p {
+  font-family: "Coming Soon", cursive;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  color: #39567c;
+}
+
+a {
+  text-decoration: none;
+  color: #39567c;
+  padding: 20px;
+}
+
+.text_wine {
+  font-family: "Coming Soon", cursive;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  color: #39567c;
+}
+
+/* Meny */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+/* Logga */
+.logo img {
+  width: 250px;
+  height: auto;
+}
+
+/* Desktop */
+@media screen and (max-width: 800px) {
+  .burger {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    height: auto;
+    width: auto;
+    background: none;
+    padding-top: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 0 15px;
+  }
+
+  .menu a:hover {
+    background: none;
+    color: #000;
+  }
+
+  .grid_1-1-1 img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  h1 {
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  /* Anpassa ev. menyikonen */
+  .menu-icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .grid_1-1-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 50px;
+    padding: 10px;
+  }
+  .galleri-item img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .galleri {
+    gap: 6px;
+  }
+
+  .vinettiketter img {
+    height: 250px;
+    flex: 1/3;
+  }
+
+  .exempel {
+    grid-template-columns: 1fr;
+  }
+
+  .exempel img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+
+  .footer-newsletter form {
+    flex-direction: column;
+  }
+
+  .footer-newsletter button {
+    width: 100%;
+  }
+
+  .julkulor {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .julkulor img {
+    width: 45%;
+    height: auto;
+  }
+
+  /* AMINATION  */
+
+  .image-row {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .image-swap {
+    width: 110px;
+    height: 170px;
+    animation: swapImages 0.9s infinite;
+  }
+
+  .image-swap2 {
+    width: 250px;
+    height: 400px;
+    animation: swapImages 0.9s infinite;
+  }
+
+  .blink-container {
+    height: 200px;
+  }
+}
+
+@keyframes swapImages {
+  0% {
+    background-image: url("img/f1.png");
+  }
+  33% {
+    background-image: url("img/f2.png");
+  }
+  66% {
+    background-image: url("img/f3.png");
+  }
+  100% {
+    background-image: url("img/f1.png");
+  }
+
+  /* AMINATION SLUT  */
+}

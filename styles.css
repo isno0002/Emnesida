@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Loggan i mitten */
+
+  padding: 15px 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Logga i mitten */
+.logo img {
+  height: 50px;
+  display: block;
+}
+
+/* Menyikon till höger */
+.menu-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.menu-icon img {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.grid_1-1-1 {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 50px;
+  padding: 10px;
+}
+
+.grid_1-1-1 img {
+  width: 400px;
+  height: 500px;
+  object-fit: auto;
+  display: block;
+  padding: 30px;
+}
+
+.grid_1-1-1 img:hover {
+  transform: scale(1.07);
+}
+
+.galleri {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px auto;
+  background-color: #39567c;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.galleri-item img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+}
+
+.galleri-item img:hover {
+  transform: scale(1.07);
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.vinettiketter {
+  display: flex;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+  background-color: #39567c;
+}
+
+.vinettiketter img {
+  flex: 1/3;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+}
+
+.vinettiketter img:hover {
+  transform: scale(1.07);
+}
+
+/* Sektionen runt rubrik + bilder */
+.inspiration {
+  text-align: center;
+  background-color: #39567c;
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 1400px;
+  margin: 40px auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.inspiration h4 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #fffacb;
+  background-color: #39567c;
+}
+
+/* Galleri-layout */
+.exempel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 bilder per rad */
+  gap: 15px;
+  justify-content: center;
+  justify-items: center;
+  background-color: #39567c;
+}
+
+/* Bilderna */
+.exempel img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  background-color: white; /* bakgrund till varje bild */
+  padding: 5px; /* liten kant runt bilden */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.exempel img:hover {
+  transform: scale(1.07);
+}
+
+.head_christmas h1 {
+  font-size: 60px;
+  margin-bottom: 0px;
+  color: #868929;
+}
+
+.p_christmas p {
+  font-family: "Coming Soon", cursive;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  color: #868929;
+}
+
+/* JULKULORNA */
+.julkulor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+/* Bilderna */
+.julkulor img {
+  flex: 1 1 25%; /* varje bild tar ca 25% av radens bredd */
+  padding: 10px;
+  height: 500px;
+  width: 100px;
+
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.christmas {
+  text-align: center;
+  background-color: #868929;
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 1400px;
+  margin: 40px auto;
+}
+
+.christmas p {
+  font-family: "Coming Soon", cursive;
+  background-color: #868929;
+  color: #fffacb;
+  text-align: center;
+  padding: 10px;
+}
+
+.christmas h4 {
+  color: #fffacb;
+  background-color: #868929;
+}
+
+.galleri_1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px auto;
+  background-color: #39567c;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.kort-item img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+}
+
+.kort-item img:hover {
+  transform: scale(1.07);
+}
+
+.galleri_1 h4 {
+  color: #fffacb;
+  background-color: #39567c;
+}
+
+.galleri_1 p {
+  font-family: "Coming Soon", cursive;
+  background-color: #39567c;
+  color: #fffacb;
+  text-align: center;
+  padding: 10px;
+}
+/* animitionen  */
+
+.image-swap {
+  width: 400px;
+  height: 600px;
+  background-image: url("img/f1.png");
+  background-size: cover;
+  background-position: center;
+  animation: swapImages 0.9s infinite;
+}
+
+@keyframes swapImages {
+  0% {
+    background-image: url("img/f1.png");
+  }
+  33% {
+    background-image: url("img/f2.png");
+  }
+  66% {
+    background-image: url("img/f3.png");
+  }
+  100% {
+    background-image: url("img/f1.png");
+  }
+}
+
+.image-swap2 {
+  width: 400px;
+  height: 600px;
+  background-image: url("img/julljus_1.png");
+  background-size: cover;
+  background-position: center;
+  animation: swapImages 0.9s infinite;
+}
+
+@keyframes swapImages {
+  0% {
+    background-image: url("img/julljus_2.png");
+  }
+  33% {
+    background-image: url("img/julljus_1.png");
+  }
+  66% {
+    background-image: url("img/julljus_2.png");
+  }
+  100% {
+    background-image: url("img/julljus_1.png");
+  }
+}
+
+/* Animation för julkulorna */
+.blink-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+/* Båda bilderna ligger exakt ovanpå varandra */
+.blink-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fyller hela bredden, beskär vid behov */
+  animation: fadeBlink 2s infinite;
+  opacity: 0;
+}
+
+/* Första bilden visas först */
+.img1 {
+  animation-delay: 0s;
+}
+
+/* Andra bilden visas lite efter */
+.img2 {
+  animation-delay: 1s;
+}
+
+/* Animationen som växlar bilderna */
+@keyframes fadeBlink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Footer */
+footer {
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1); /* Skugga uppåt, matchar headern */
+  padding: 30px 20px 10px;
+  margin-top: 40px;
+}
+
+/* Innehållscontainer */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Gör responsiv */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Länkar */
+.footer-links {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 12px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #007bff;
+}
+
+/* Nyhetsbrev */
+.footer-newsletter {
+  max-width: 300px;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer-newsletter p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-newsletter form {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-newsletter input {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footer-newsletter button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer bottenrad */
+.footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #666;
+}
